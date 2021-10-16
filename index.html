@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/Muna.ico">
+    <title>DISKEPORA MUNA - Dinas Kepemudaan dan Olahraga</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#"><img src="./images/BKPP Logo.svg" class="logo" alt=""></a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">Beranda</a></li>
+                <li><i class="fa fa-users" aria-hidden="true"></i><a href="#">Profile</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Media & Infromasi</a></li>
+                <li><i class="fa fa-file" aria-hidden="true"></i><a href="#">Download File</a></li>
+                <li><i class="fa fa-address-book-o" aria-hidden="true"></i><a href="#">Kontak</a></li>
+                <li><span class="themeSwitch"></span></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Selamat Datang di <br>Website <span>BKPP Muna</span></h2>
+                <p>Selamat datang di Website Resmi Badan Kepegawaian, Pendidikan dan Pelatihan (BKPP) Kabupaten Muna</p>
+                <a href="#">Selengkapnya</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/logo_muna.png" alt="">
+            </div>            
+        </div>
+        <div>
+            <ul class="sci">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="bkpp about">
+                <h2>Tentang</h2>
+                <p>Website Resmi BKPP Kabupaten Muna</p>
+                <ul class="bkd-about">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="bkpp quicklinks">
+                <h2>Link Terkait</h2>
+                <ul>
+                    <li><a href="#">Tentang</a></li>
+                    <li><a href="#">F A Q</a></li>
+                    <li><a href="#">Ketentuan Privasi</a></li>
+                    <li><a href="#">Bantuan</a></li>
+                    <li><a href="#">Term & Conditiion</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="bkpp quicklinks">
+                <h2>BKPP Muna</h2>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Berita</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="bkpp kontak">
+                <h2>Kontak Kami</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>Jl. Gatot Subroto<br>Motewe, 93617,<br>MUNA</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p><a href="#">085112341234</a><br><a href="#">085112341234</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <p><a href="#">bkppmuna@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright @ 2021 Rizal Junaedi. All Rights Reserved</p>
+    </div>
+
+    <!-- js -->
+    <script>
+        let themeSwitch = document.querySelector('.themeSwitch');
+        let body = document.querySelector('body');
+        themeSwitch.onclick = function(){
+            themeSwitch.classList.toggle('active');
+            body.classList.toggle('dark');
+        }
+
+        let menutoggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        menutoggle.onclick = function(){
+            menutoggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
